@@ -5,5 +5,23 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 requires-python = ">=3.11"
 dependencies = [
+    "pip3-autoremove==1.2.2",
+    "pip==24.3.1",
     "requests>=2.32.3",
 ]
+
+[tool.poetry]
+name = "img-wallet-tracker"
+version = "0.1.0"
+description = "Bot to track IMG wallet and alert on Telegram"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+python-telegram-bot = "^20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
